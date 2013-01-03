@@ -34,7 +34,7 @@ Or install it yourself as:
     'A cynic smells flowers and looks for the casket.'
     ]
 
-    limit = 1 #restrict to the top 2 relevant words per document
+    limit = 3 #restrict to the top 2 relevant words per document
     exclude_stop_words = false
 
     @t = RubyTfIdf::TfIdf.new(corpus,limit,exclude_stop_words)
@@ -42,12 +42,12 @@ Or install it yourself as:
 
 
 output = [
-		{"anything"=>0.7781512503836436}
-		{"mistake"=>0.7781512503836436}
-		{"overhead"=>0.7781512503836436}
-		{"week"=>0.7781512503836436}
-		{"desk"=>1.5563025007672873}
-		{"casket"=>0.7781512503836436}
+		{"anything"=>0.7781512503836436, "fix"=>0.7781512503836436, "enough"=>0.7781512503836436}
+		{"mistake"=>0.7781512503836436, "bird"=>0.47712125471966244, "in"=>0.47712125471966244}
+		{"overhead!"=>0.7781512503836436, "better"=>0.7781512503836436, "one"=>0.7781512503836436}
+		{"week"=>0.7781512503836436, "career"=>0.7781512503836436, "hours"=>0.7781512503836436}
+		{"desk"=>1.5563025007672873, "drawer"=>0.7781512503836436, "clean"=>0.7781512503836436}
+		{"casket"=>0.7781512503836436, "cynic"=>0.7781512503836436, "smells"=>0.7781512503836436}
 		]
 
 ## Contributing
