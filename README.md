@@ -25,21 +25,31 @@ Or install it yourself as:
     require 'ruby-tf-idf'
 
     corpus = 
-	[
-	'A big enough hammer can usually fix anything',
-	'A bird in the hand is a big mistake .',
-	'A bird in the hand is better than one overhead!',
-	'A career is a job that takes about 20 more hours a week.'
-	'A clean desk is a sign of a cluttered desk drawer.'
-	'A cynic smells flowers and looks for the casket.'
-	]
-	
-    limit = 2 #restrict to the top 2 relevant words per document
+    [
+    'A big enough hammer can usually fix anything',
+    'A bird in the hand is a big mistake .',
+    'A bird in the hand is better than one overhead!',
+    'A career is a job that takes about 20 more hours a week.',
+    'A clean desk is a sign of a cluttered desk drawer.',
+    'A cynic smells flowers and looks for the casket.'
+    ]
+
+    limit = 1 #restrict to the top 2 relevant words per document
     exclude_stop_words = false
 
-    @t = Tfidf.new(corpus,limit,exclude_stop_words)
+    @t = RubyTfIdf::TfIdf.new(corpus,limit,exclude_stop_words)
     puts @t.tf_idf
 
+outputs:
+
+output = [
+		{"anything"=>0.7781512503836436}
+		{"mistake"=>0.7781512503836436}
+		{"overhead"=>0.7781512503836436}
+		{"week"=>0.7781512503836436}
+		{"desk"=>1.5563025007672873}
+		{"casket"=>0.7781512503836436}
+		]
 
 ## Contributing
 
