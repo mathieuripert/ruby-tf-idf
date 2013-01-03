@@ -34,7 +34,7 @@ Or install it yourself as:
     'A cynic smells flowers and looks for the casket.'
     ]
 
-    limit = 3 #restrict to the top 2 relevant words per document
+    limit = 3 #restrict to the top 3 relevant words per document
     exclude_stop_words = false
 
     @t = RubyTfIdf::TfIdf.new(corpus,limit,exclude_stop_words)
