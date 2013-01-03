@@ -1,6 +1,9 @@
-# Ruby::Tf::Idf
+# Ruby-Tf-Idf
 
-TODO: Write a gem description
+This gem calculates TF-IDF to find the most relevant words of each document in corpus
+
+TF-IDF is for Term Frequency - Inverse Document Frequency
+http://en.wikipedia.org/wiki/Tf%E2%80%93idf
 
 ## Installation
 
@@ -10,7 +13,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -18,7 +21,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    corpus = 
+	[
+	'A big enough hammer can usually fix anything',
+	'A bird in the hand is a big mistake .',
+	'A bird in the hand is better than one overhead!',
+	'A career is a job that takes about 20 more hours a week.'
+	'A clean desk is a sign of a cluttered desk drawer.'
+	'A cynic smells flowers and looks for the casket.'
+	]
+	
+    limit = 2 #restrict to the top 2 relevant words per document
+    exclude_stop_words = false
+
+    @t = Tfidf.new(corpus,limit,exclude_stop_words)
+    puts @t.tf_idf
+
 
 ## Contributing
 

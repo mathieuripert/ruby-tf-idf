@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["mathieu.ripert@gmail.com"]
   gem.description   = %q{Term Frequency - Inverse Document Frequency }
   gem.summary       = %q{Gem that calculates TF-IDF out of a text to find most relevant words in each document of the corpus}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/mathieuripert/ruby-tf-idf"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
