@@ -38,9 +38,8 @@ Or install it yourself as:
     exclude_stop_words = false
 
     @t = RubyTfIdf::TfIdf.new(corpus,limit,exclude_stop_words)
-    puts @t.tf_idf
+    output =  @t.tf_idf
 
-outputs:
 
 output = [
 		{"anything"=>0.7781512503836436}
