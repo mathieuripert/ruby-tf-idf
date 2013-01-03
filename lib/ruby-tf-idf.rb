@@ -1,3 +1,6 @@
+#!/bin/env ruby
+# encoding: ISO-8859-1
+
 require "ruby-tf-idf/version"
 
 module RubyTfIdf
@@ -37,8 +40,7 @@ module RubyTfIdf
 
     STOP_WORDS_FR = [
 
-      '-elle','-il','10ème','1er','1ère','2ème','3ème','4ème','5ème','6ème','7ème','8ème',
-      '9ème','à','a','afin','ai','ainsi','ais','ait','alors','après','as','assez','au','aucun',
+      '-elle','-il','à','a','afin','ai','ainsi','ais','ait','alors','après','as','assez','au','aucun',
       'aucune','auprès','auquel','auquelles','auquels','auraient','aurais','aurait','aurez',
       'auriez','aurions','aurons','auront','aussi','aussitôt','autre','autres','aux',
       'avaient','avais','avait','avant','avec','avez','aviez','avoir','avons','ayant',

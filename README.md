@@ -21,6 +21,9 @@ Or install it yourself as:
 
 ## Usage
 
+    require 'rubygems'
+    require 'ruby-tf-idf'
+
     corpus = 
 	[
 	'A big enough hammer can usually fix anything',
